@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<authors>
+	<author name="Brandon Sanderson">
+		<book price="22">The Final Empire</book>
+		<book price="22">The Well of Ascension</book>
+		<book price="0">The Hero of Ages</book>
+		<book price="25">The Way of Kings</book>
+		<book price="25">Words of Radiance</book>
+		<book price="0">Oathbringer</book>
+		<book price="28">Rhythm of War</book>
+		<book price="18">Elantris</book>
+	</author>
+	<author name="J. Idiota Rowling">
+		<book price="19">The Philosopher's Stone</book>
+		<book price="19">The Chamber of Secrets</book>
+		<book price="21">The Prisoner of Azkaban</book>
+		<book price="0">The Goblet of Fire</book>
+		<book price="20">The Order of the Phoenix</book>
+		<book price="0">The Half-Blood Prince</book>
+		<book price="21">The Deathly Hallows</book>
+		<book price="15">The Cursed Child</book>
+		<book price="18">Fantastic Beasts and where to find them</book>
+	</author>
+	<author name="J.R.R Tolkien">
+		<book price="22">The Fellowship of the Ring</book>		
+		<book price="0">The Two Towers</book>		
+		<book price="23">The Return of the King</book>		
+		<book price="15">The Hobbit</book>		
+	</author>
+</authors>

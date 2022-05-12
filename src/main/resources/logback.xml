@@ -1,0 +1,40 @@
+<configuration>
+	<timestamp key="dateWithHour"
+		datePattern="dd-MM-yyyy_HH-mm-ss" />
+
+	<appender name="console"
+		class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%date{HH:mm:ss} [%thread] %-4level --- [%method] --- %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="rollingFile"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>C://Logback//ficheroSalida-${dateWithHour}.log</file>
+
+		<rollingPolicy
+			class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+			<fileNamePattern>C://Logback//ficheroSalida-${dateWithHour}.%i.logDual.zip
+			</fileNamePattern>
+			<minIndex>1</minIndex>
+			<maxIndex>3</maxIndex>
+		</rollingPolicy>
+
+		<triggeringPolicy
+			class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+			<maxFileSize>50KB</maxFileSize>
+		</triggeringPolicy>
+
+		<encoder>
+			<pattern>%date{HH:mm:ss} [%thread] %-4level --- [%method] --- %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<root level="debug">
+		<appender-ref ref="console" />
+		<appender-ref ref="rollingFile" />
+	</root>	
+</configuration>
